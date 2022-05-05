@@ -1,0 +1,15 @@
+{
+  "name": "Demo Blur",
+  "description": "Blurs certain fields on an HTML page",
+  "version": "1.0",
+  "permissions": [
+    "activeTab", "tabs", "background"
+  ],
+    "content_scripts": [
+    {
+      "matches": ["http://{url}/{page or *}"],
+      "js": ["content_script.js"]
+    }
+  ],
+  "manifest_version": 3
+}
